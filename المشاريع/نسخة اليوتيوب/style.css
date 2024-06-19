@@ -1,0 +1,579 @@
+
+body {
+    color: #FAF0E6;
+    background-color: #352F44;
+    margin: 0;
+    font-family: Cairo, Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    font-family: Cairo, Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    
+    background-color: #B9B4C7;
+    background-color: #352F44;
+}
+
+#logo button {
+
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    margin-left: 20px;
+    margin-right: 9px;
+    font-size: 35px;
+    font-family: 'Gulzar', Arial, Helvetica, sans-serif;
+    border: 0 ;
+    
+}
+
+#logo button:hover {
+    animation-name: logo-animation;
+    animation-duration: 2s;
+}
+
+@keyframes logo-animation {
+
+    0% {transform: scale(1);}
+    10% {transform: scale(1.05);}
+    20% {transform: scale(1.1);}
+    30% {transform: scale(1.2);}
+    40% {transform: scale(1.6);}
+    50% {transform: scale(1);}
+
+}
+
+#main-menu {
+    flex-grow: 1;
+    max-width: 360px;
+    
+}
+
+nav a {
+    
+    background-color: #352F44;
+    color: #B9B4C7;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15px;
+    padding: 25px 10px;
+    padding-top: 30px ;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
+    
+}
+
+
+
+nav a:hover {
+    background-color: #352F44;
+    padding-bottom: 55px;
+    color: #B9B4C7;
+}
+
+
+
+
+nav a:hover {
+    filter: brightness(140%);
+    
+}
+
+#search-bar {
+    flex-grow: 2;
+    font-size: 0;
+    background-color: #352f4400;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    max-width: 600px;
+    min-width: 200px;
+    margin-left: 15px;
+    
+    
+}
+
+#search-bar form {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+form input, form textarea {
+    font-size:18px;
+    color: white;
+    background-color: #352f4400;
+    border: 2px solid white;
+   outline: 0;
+    border-left: 0;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 300px;
+    /* height: 5vh; */
+    flex-grow: 1;
+
+}
+
+form button {
+    color: white;
+    background-color: #4b4360;
+    border: 2px solid white;
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 45px;
+    font-size: 15px;
+    
+}
+
+#search-button:hover {
+    background-color: #2b2637;
+}
+
+#search-bar .fa-search {
+    font-size: 20px;
+}
+
+#show-menu {
+    display: none;
+}
+
+#user-menu {
+    margin-right: auto;
+}
+
+main {
+    display: flex;
+    
+    
+}
+
+#player {
+    /* min-width: 880px; */
+    margin: 15px;
+    margin-top: 0;
+}
+
+#player #video {
+    margin-top: 20px;
+    width: 100%;
+    height: 24.5%;
+    
+    border-radius: 5px;
+    min-width: 900px;
+    
+}
+
+#video-title {
+    text-indent: 30px;
+}
+
+#player span {
+    margin-right: 30px;
+}
+
+#under-title-info {
+    
+    background-color:#413a54;
+    padding: 10px 30px;
+    margin-top: 10px;
+    
+}
+
+#send-comment-section {
+    /* height: 100px; */
+}
+
+#send-comment-form {
+    display: flex;
+    /* height: 150px; */
+    
+}
+
+#send-comment-form textarea {
+    resize: none;
+    /* height: 75px; */
+    font-size: 20px;
+    border-radius: 0;
+}
+
+#send-comment-form button {
+    padding: 0;
+    border-radius: 0;
+    height: 96px;
+    margin-top: 1px;
+}
+
+.flex-item {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+#channel-info { 
+    display: flex;
+    flex-grow: 1;
+}
+
+#channel-image {
+    width: 60px;
+    height: 6vh;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.interaction-button {
+    margin: 0;
+    margin-top: 10px;
+    min-width: 50px;
+    color: rgb(255, 255, 255);
+    
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff00;
+    border: 0;
+    
+}
+
+.interaction-button:hover {
+    background-color: #2b2637;
+}
+
+#Like-button:active {
+   transform: scale(1.5);
+   
+}
+
+.comment {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.comment:hover {
+    background-color: #2b2637;
+
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+
+.avatar {
+    display: inline-block;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.comment-text {
+    margin-right: 40px;
+    text-align: justify;
+}
+
+p {
+    text-indent: 15px;
+    text-align: justify;
+}
+
+#show-more-comments
+{
+    text-align: center;
+    margin: 0;
+}
+
+.comment i {
+    font-size: 40px;
+    
+}
+
+
+#left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+#suggested {
+    
+    min-width: 400px;
+    
+
+    border-radius: 10px;
+    min-width: none;
+    
+}
+
+.video-thumbnail {
+    height: 100px;
+}
+
+#suggested-title {
+    background-color: #B9B4C7;
+    color: #352F44;
+    border-radius: 3px ;
+    padding: 5px 15px;
+}
+
+.suggested-video {
+    display: flex;
+    padding: 2px;
+    border-bottom: 1px solid white;
+    border-radius: 1px;
+    margin-bottom: 5px;
+
+}
+.suggested-video:hover {
+    filter:brightness(125%);
+    background-color: hwb(257 20% 73%);
+}
+.video-thumbnail {
+    min-width:150px;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.suggested-video div{
+    margin-right: 10px;
+    
+}
+
+.suggested-video p {
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    color: #352F44;
+    background-color: #B9B4C7;
+    height: 300px;
+}
+
+@media  screen and (max-width:1350px)
+{
+    
+    main {
+        flex-direction: column ;
+    }
+
+    #suggested {
+        height: auto;
+        min-width: 0;
+        
+    }
+
+    #player {
+       
+        min-width: 0;
+    }
+
+
+    #player #video {
+        
+        min-width: 0;
+        
+    }
+    .video-thumbnail {
+        min-width: 150px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    #user-menu {
+        display: none;
+    }
+    #show-menu {
+        display: block;
+        width: 45px;
+        background-color: #352F44;
+        
+        margin-right: auto;
+       
+        
+    }
+
+    #search-bar {
+         margin-left: 15px ;
+        }
+    
+}
+
+
+
+@media  screen and (max-width:909px) {
+
+    #player {
+        min-width: 0;
+        
+    }
+
+    #player #video {
+        min-width: 0;
+        margin: 10px;
+        margin-top: 10px;
+    }
+
+    #video-title {
+
+        margin-right: 4px;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:985px) {
+    #main-menu { 
+        
+        flex-grow: 1;
+    }    
+    
+    #search-bar {
+        flex-grow: 2;
+        
+    }
+  
+
+    
+   
+}
+
+@media screen and (max-width:870px) {
+    #main-menu { 
+        display: none;
+    }    
+    
+    #search-bar {
+        max-width: none;
+    }
+  
+
+    
+   
+}
+
+
+
+
+@media screen and (max-width:520px) {
+    #search-bar {
+        width: auto;
+        
+    }   
+    
+    form {
+        width: auto;
+        flex: 1;
+    }
+
+    #search-bar-text-box {
+        width: auto;
+        flex-grow: 1;
+    }
+   
+   
+}
+
+
+
+@media screen and (max-width:453px) {
+    
+    #main-menu a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    
+   
+}
+
+@media screen and (max-width:425px) {
+    
+    #main-menu a {
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #search-bar {
+        min-width: 0;
+        width: auto;
+    }
+    #search-bar #search-bar-text-box {
+        min-width: 0;
+        width: auto;
+    }
+    
+    
+   
+}
+
+@media screen and (max-width:350px) {
+    
+   
+    #main-menu{
+        display: none;
+    }
+
+   
+
+    
+    
+    
+   
+}
+
+
+/* #heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    
+  }
+  
+  #heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    border-bottom-left-radius: 10px;
+    background: rgba(255, 0, 0, 0);
+    
+  }
+  
+  #heart::before {
+    left: 55px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+  }
+  
+  #heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    border-right: 5px solid white;
+    border-bottom-right-radius: 10px;
+    
+    border-top: 5px solid white;
+  } */

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرن</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+
+
+<body>
+
+
+
+    <header>
+        <nav>
+            <div id="logo">
+
+                <button>مرن</button>
+
+            </div>
+
+
+
+
+            <div id="main-menu">
+                <a href="">الواجهة</a>
+                <a href="">تصفح</a>
+                <a href="">الهبّات</a>
+
+            </div>
+
+
+            <div id="search-bar">
+
+                <form action="#">
+
+                    <input type="text" name="search-bar-text-box" id="search-bar-text-box" placeholder="البحث من هنا" />
+                    <button id="search-button" type="submit">
+                        <i class="fa fa-search fa-1x"></i>
+                    </button>
+                </form>
+            </div>
+
+
+            <div id="user-menu">
+                <a href="" class="">ارفع مقطعًا <i class="fa fa-upload"></i></a>
+            </div>
+
+            <div id="show-menu">
+
+                <i class="fa fa-solid fa-bars fa-flip fa-2x"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- flex -->
+        <!-- قسمان: يمين ويسار -->
+        <section id="player">
+
+
+
+
+
+            <!-- <video controls>
+                <source src="../مشروع الوسائط/Videos/غابة.mp4" type="Video/mp4" />
+                
+            </video> -->
+
+            <iframe id="video" src="https://www.youtube.com/embed/B-EVKMeDjVU?si=SETVXgamBI5d2k81" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h1 id="video-title">
+                تَراهُ إِذا ما جئتهُ مُتَهَلِّلاً كَأَنَّكَ مُعطيهِ الَّذي أَنتَ سائِلُه كَريمٌ إِذا جِئت لِلعُرفِ
+                طالِباً حَباكَ بِما تَحنو عَلَيهِ أَنامِلُه وَلَو لَم يَكُن في كَفِّهِ غَيرُ نَفسِهُ لَجادَ بِها
+                فَليَتَّقِ اللَّهَ سائِلُه
+            </h1>
+            <span>13,456 مشاهدة، قبل ست سنوات</span>
+
+            <div id="under-title-info">
+
+
+                <div class="flex-item">
+                    <div id="channel-info">
+                        <div id="channel-image" style="background-image: url('../مشروع الوسائط/Images/ثلج.jpg');">
+
+                        </div>
+                        <h3 id="channel-name">زهير بن أبي سلمى</h3>
+                    </div>
+
+                    <div id="rating">
+                        <!-- <button  class="fa fa-heart-o fa-2x"></button> -->
+                        <button id="Like-button" class="fa fa-heart-o fa-2x interaction-button"></button>
+                        <button id="share" class="fa fa-share fa-2x interaction-button"></button>
+                    </div>
+                </div>
+
+                <div id="description">
+                    <p>
+                        في هذا المقطع، نستكشف جماليات الشعر وعناصره الأساسية مثل الوزن والقافية والصور الشعرية. نلقي
+                        نظرة على أعمال بعض الشعراء الكبار ونحلل كيف تعبر قصائدهم عن موضوعات إنسانية عميقة. نتناول تأثير
+                        الشعر على العاطفة والعقل وكيف يعبر عن تجاربنا ومشاعرنا بطرق فنية مبتكرة. نختم بنصائح لمن يرغب في
+                        كتابة الشعر، مشجعين على التعبير الصادق والإبداعي.
+                    </p>
+                </div>
+
+                <div id="comment-section">
+                    <div id="send-comment-section">
+                        <form action="" id="send-comment-form">
+                            <textarea placeholder="علّق هنا"></textarea>
+                            <button type="submit">أرسل</button>
+                        </form>
+                    </div>
+
+                    <div id="comments">
+
+                        <div class="comment">
+                           
+                            <div class="user-info">
+                                <span class="avatar">
+
+                                </span>
+    
+                                <span class="username">
+                                    @تركي
+                                </span>
+                            </div>
+
+                            <div class="comment-text">
+                                <p>
+                                    تتجلى في هذه الأبيات صفات الكرم والجود عند الممدوح، حيث يُصوّره الشاعر كمن يستقبل
+                                    الزائر بفرح وسعادة، كأنما هو المعطي والسائل في آن واحد. يظهر الكرم في كلماته
+                                    وأفعاله، فهو يمنح طالب المعروف بكل ما تجود به أنامله. ويبلغ الكرم ذروته في البيت
+                                    الأخير حين يؤكد الشاعر أن الممدوح، حتى لو لم يكن يملك سوى نفسه، لبذلها سخاءً، داعياً
+                                    السائل أن يتقِ الله في طلبه.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="show-more-comments" class="comment">
+                            <i class="fa fa-solid fa-angle-down"></i>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </section>
+
+        <div id="left-side">
+            <h3 id="suggested-title">مقاطعٌ مقترحة لك</h1>
+
+
+                <sectoin id="suggested">
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+
+                        <div>
+                            <h5>ما للمنيّة أدعوها و تبتعد
+                                أمرّ من كل حتف بعض ما أجد
+
+                                ظمآن أشهد ورد الموت عن كثبٍ
+                                و الواردون أحبّائي و لا أرد
+                            </h5>
+
+                            <p> بدوي الجبل</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>إذا كان غيرُ اللهِ للمرءِ عُدّةً
+                                ‏أتته الرَّزايَا من وجوهِ الفوائدِ
+
+                                ‏عسى اللهُ أن يأتي بخيرٍ، فإنّ لي
+                                ‏عَوائدَ مِن نُعماهُ، غيرَ بَوَائدِ
+
+                                ‏فكم شالَني مِن قَعرِ ظَلْماءَ، لم يكنْ
+                                ‏ليُنقِذَني مِن قَعرِها حَشْدُ حاشدِ</h5>
+                            <p> أبو فراس الحمداني</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>كل الحوادث مبداها من النظر
+                                ومعظم النار من مستصغر الشَرَرِ
+
+                                كم نظرة بلغت من قلب صاحبها
+                                كمبلغ السهم بين القوس والوتر</h5>
+                            <p> ابن القيّم</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>عنوان المقطع</h5>
+                            <p> اسم القناة</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>عنوان المقطع</h5>
+                            <p> اسم القناة</p>
+                        </div>
+
+                    </div>
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>عنوان المقطع</h5>
+                            <p> اسم القناة</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="suggested-video">
+                        <div class="video-thumbnail"
+                            style="background-image: url('../مشروع الوسائط/Images/نهر.webp') ;">
+
+                        </div>
+                        <div>
+                            <h5>عنوان المقطع</h5>
+                            <p> اسم القناة</p>
+                        </div>
+
+                    </div>
+                </sectoin>
+
+        </div>
+
+    </main>
+
+    <footer>
+        حقوق الطبع والنشر، مرن 2001م
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+body {
+    color: #112D4E;
+    background-color: #3F72AF;
+    margin: 5px;
+    background-image: url('./Images/معرض.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    height: auto;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}   
+
+main {
+    display: flex;
+    
+}
+
+#right-side {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+}
+
+#about, #events {
+    /* width: 100%; */
+    margin: 25px;
+    
+}
+
+#about {
+    z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    /* height: 450px; */
+    
+    
+}
+
+#about header {
+    width: 80%;
+     margin-top: 50px;
+}
+
+
+#about::before {
+    content: "";
+    top: 5px;
+    left: 10px;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-color: #f9f7f77b;
+    z-index: -1;
+}
+
+#about::after {
+
+    position: absolute;
+    top: 15px;
+    border-top: 1px solid #DBE2EF;
+    border-right: 1px solid #DBE2EF;
+    content: "";
+    height: 500px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(219, 226, 239, 0.612);
+    z-index: -2;
+    
+    
+}
+
+#about h1{
+    padding:0 ;
+}
+
+#about p {
+    text-indent: 15px;
+    line-height: 23px;
+}
+
+.sponsors {
+    margin-top: 90px;
+   
+}
+
+.sponsors h3 {
+    background-color:#112D4E;
+    color: #DBE2EF;
+    display: inline-block;
+    width: 35%;
+    padding: 10px 5px;
+}
+.sponsor-images
+{
+    margin-right: 50px;
+}
+.sponsors img {
+    margin-right: 5px;
+    width: 60px;
+}
+
+
+#Events {
+    overflow-y: scroll;
+    position: relative;
+    height: 1000px;
+    flex-grow: 1;
+    /* width: 100%; */
+    display: inline-block;
+    z-index: 1;
+    opacity: 95%;
+}
+
+
+
+
+#Events h3 {
+    padding:0 ;
+    color: #DBE2EF;
+    padding-right: 15px;
+}
+
+
+
+.Event-details {
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 9px;
+}
+
+.Event-details:hover {
+    opacity: 90%;
+
+}
+
+.full-opacity:hover {
+    opacity: 1;
+}
+
+
+.Left-Margin-Zero
+{
+    margin-left: 0;
+}
+
+.Event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: hwb(212 7% 69%); */
+    background-color: rgb(14, 14, 14);
+    min-width:30%;
+    
+}
+
+.Event-details:nth-child(odd) .Event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hwb(212 0% 69%);
+    
+    min-width:30%;
+    
+}
+
+.Event-date p{
+    color: #DBE2EF;
+    
+    margin: 0;
+    /* background-color: #005C78; */
+    padding: 3px 12px;
+    
+} 
+
+.year {
+    font-size: 80px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: hwb(212 0% 69%);
+    background-color: #F9F7F7;
+}
+
+.day-of-month {
+    font-size: 40px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column ;
+    background-color: #3F72AF;
+    color: #DBE2EF;
+    text-indent: 20px ;
+    padding: 0 18px;
+    flex-grow: 1;
+    /* width: 70%; */
+    
+    line-height: 30px;
+}
+
+.event-info  a { 
+    color: #F9F7F7;
+    display: block;
+    text-decoration: none;
+    align-self: flex-end ;
+    
+    margin-bottom: 5px;
+    padding: 5px 29px ;
+    padding-right: 0;
+    background-color: hwb(212 0% 69%) ;
+    
+    
+}
+
+@media  screen and (max-width: 892px) {
+    main {
+        flex-direction: column;
+        flex: wrap;
+    }
+
+    #about {
+        width: auto;
+        margin: 15px;
+        width: 100%;
+    }
+
+    
+   
+    
+    #Events {
+        height: auto;
+        
+    }
+
+    #Events h3 {
+
+        background-color:#112D4E;
+        display: inline-block;
+        width: 35%;
+        padding: 10px 5px;
+    }
+}
+
+@media  screen and (max-width: 406px) {
+    
+
+
+    #about,#about::before, #about::after {
+        height: 600px;
+
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+}

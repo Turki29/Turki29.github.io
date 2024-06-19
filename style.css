@@ -1,0 +1,529 @@
+
+:root {
+    --color-avatar-container-bg: #27374D;
+    --color-info-bg: #526D82;
+    --color-skills-bg: #9DB2BF;
+    --color-article--bg: #a0b9cc;
+}
+
+
+body {
+    font-family: Almarai, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4f7c9d;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+    max-width: 1225px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+main aside {
+    background-color: gray;
+    /* height: 100vh; */
+    /* width: 25%; */
+}
+
+main article {
+    background-color: green;
+    height: 100vh;
+    
+}
+
+/* الهامش الأيمن يبدأ هنا */
+
+ .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right > div{
+    width: 100%;
+}
+
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: var(--color-avatar-container-bg);
+    color: white;
+}
+
+.avatar {
+    background-color: gray;
+    height: 150px;
+    width: 150px;
+    margin: 40px 0;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+    
+}
+
+.work {
+    margin-bottom: 30px;
+}
+
+.avatar:hover {
+
+    width: 220px;
+    height: 220px;
+
+}
+
+#name {
+    font-size: 23px;
+    margin-bottom: 16px;
+    font-weight: bolder;
+}
+
+.separator{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    height: 1vh;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 80%;
+    box-shadow: 0px 10px 7px -3px rgba(0,0,0,0.1);
+    
+ }
+
+.info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #5C8374;
+    background-color: var(--color-info-bg);
+    padding: 30px 0px;
+    
+}
+
+.info span, .info div {
+    margin: 4px 16px;
+    
+    font-weight: bold;
+}
+
+
+
+.info div span {
+    margin: 0px;
+    
+    
+}
+
+.skills {
+    background-color: var(--color-skills-bg) ;
+    flex-grow: 1;
+}
+
+.skills ul {
+    
+    margin: 20px 5px;
+    
+}
+
+.skills li {
+    
+    margin: 8px 0;
+    
+}
+/* الهامش الأيمن ينتهي هنا */
+
+
+/*المحتوى يبدأ من هنا  */
+
+main article {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--color-article--bg);
+    color: black;
+
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Heading start */
+#heading {
+    position: relative;
+    display: flex;
+    
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    background-color: #3e526e;
+}
+
+.heading-text  {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#Title {
+    font-size: 30px;
+    margin: 30px;
+    margin-bottom: 0 ;
+    
+    /* margin: 0 auto; */
+}
+
+#Sub-title {
+    font-size: 16px;
+    margin: 0 30px;
+    margin-top: 15px;
+    
+}
+.heading-text button {
+    font-family: Almarai, Arial, Helvetica, sans-serif;
+
+    border: 0;
+    border-radius: 2px;
+    background-color: #ddb831;
+    color: #f3f3f3;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 125px;
+    padding: 15px;
+    margin: 30px;
+    /* animation-duration: 1s; */
+    transition: all 0.5s ease;
+}
+
+.heading-text button:hover {
+    /* background-color: #ddb831; */
+    filter: brightness(0.9);
+    transform: scale(1.1);
+}
+
+#projects-count {
+    background-color: #e2bf43;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content:  space-between;
+    
+
+    /* height: 25vh; */
+}
+
+#projects-count > p {
+    color: #f3f3f3;
+    
+    margin: 5px auto;
+    
+    
+}
+
+/* Heading End*/
+
+
+/* Services Start */
+
+#after-heading {
+    
+}
+
+#after-heading div:first-child {
+    margin: 5px;
+    color: white;
+}
+
+#Services {
+    display: flex;
+    
+    width: 100%;
+    
+}
+
+
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    
+    /* max-width: 250px; */
+    background-color: #ddb831;
+    color: #fdfdfd;
+    border-radius: 5px;
+    margin: 5px;
+    
+
+}
+
+#Services .service:nth-child(2) {
+    min-width: 143px;
+}
+
+
+
+
+.service h4, .service p {
+    margin: 15px;
+}
+
+.service h4 {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* Services End*/
+
+
+/* Projects starts here */
+
+#Projects {
+    margin-top: 25px;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container a {
+    text-decoration: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-avatar-container-bg);
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    
+
+}
+
+.project:hover {
+    filter: brightness(1.2);
+}
+
+.project div {
+    height: 10vh;
+    margin: 0;
+    /* width: 10%; */
+    background-position: center;
+    background-size: cover;
+}
+
+.project h4 {
+    padding: 0px 10px;
+}
+
+/* Projects ends here */
+
+
+/*المحتوى ينتهي من هنا  */
+
+/* الهامش الأيسر يبدأ هنا */
+
+.left {
+    background-color: var(--color-avatar-container-bg);
+    color: white;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.site-language a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.site-language a:first-child {
+    background-color: #526D82;
+   
+}
+
+.site-language a:nth-child(2):hover {
+    background-color: var(--color-skills-bg);
+}
+
+.social-accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.social-accounts a {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.social-accounts a:hover {
+    background-color: var(--color-info-bg);
+    border-radius: 20px;
+}
+
+.social-accounts a {
+    color: white;
+    text-align: center;
+}
+
+.social-accounts a i {
+    font-size: 80px;
+    
+}
+
+
+
+/* الهامش الأيسر ينتهي هنا */
+
+
+@media screen and (max-width:876px) {
+    #Services  {
+        flex-wrap: wrap;
+        
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .project {
+        width: 200px;
+    }
+
+    main {
+        grid-template-columns: 300px 1fr 50px;
+    }
+
+    .site-language a{
+        font-size: 14px;
+        margin: 5px;
+    }
+
+   
+    
+    .social-accounts a {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .social-accounts a:hover {
+        background-color: var(--color-info-bg);
+        border-radius: 20px;
+    }
+    
+    .social-accounts a {
+        color: white;
+        text-align: center;
+    }
+    
+    .social-accounts a i {
+        font-size: 40px;
+        
+    }
+
+
+}
+
+@media screen and (max-width:785px) {
+ 
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+        height: auto;
+        margin-left: 5px;
+    }
+
+    main {
+        grid-template-columns: 250px 1fr 50px;
+    }
+    
+    #projects-count > p {
+        margin: 2px;
+    }   
+
+}
+
+@media screen and (max-width:641px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main article {
+        overflow-y: hidden;
+        height: auto;
+        
+    }
+    .work {
+        margin-bottom: 5px;
+    }
+    #projects-count {
+        margin: 0 auto;
+    }
+
+    #Projects .title{
+        
+        background-color: #27374D;
+        margin: 0;
+        padding-right: 10px;
+    }
+
+    .title h3{
+        padding-right: 15px;
+    }
+
+    .project div {
+        height: 30vh;
+    }
+
+    .social-accounts {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-language {
+        display: none;       
+    }
+}
