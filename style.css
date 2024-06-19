@@ -290,6 +290,9 @@ main article {
     
 }
 
+
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -382,6 +385,7 @@ main article {
     width: 80px;
     height: 80px;
     margin: 5px;
+    text-decoration: none;
     background-size: cover;
     background-position: center;
     padding: 5px;
@@ -496,6 +500,11 @@ main article {
 
     #hidden-social {
         display: block;
+
+    }
+
+    #hidden-social div {
+        /* width: ; */
     }
 
 
@@ -505,9 +514,12 @@ main article {
 
     #Projects .title{
         
+        width: 100%;
         background-color: #27374D;
         margin: 0;
+        margin-left: 0;
         padding-right: 10px;
+        padding-bottom: 1px ;
     }
 
     .title h3{
