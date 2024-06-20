@@ -558,7 +558,11 @@ main article {
         margin: 0 auto;
     }
 
-    #Projects .title{
+    .service {
+
+    }
+
+   .title{
         
         width: 100%;
         background-color: #27374D;
@@ -572,9 +576,7 @@ main article {
         padding-right: 15px;
     }
 
-    /* .project > div {
-        height: 30vh;
-    } */
+   
 
  
     .social-accounts {
