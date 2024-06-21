@@ -25,6 +25,10 @@
         flex-direction: column;
     }
 
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
     .justify-space-between {
         justify-content: space-between;
     }
@@ -91,6 +95,10 @@
         width: 250px;
     }
 
+    .width-50{
+        width: 50%;
+    }
+
     .width-100{
         width: 100%;
     }
@@ -105,6 +113,10 @@
 
     .height-50vh {
         height: 70vh;
+    }
+
+    .height-100vh {
+        height: 120vh;
     }
 
     .margin-zero {
@@ -157,12 +169,12 @@
         
     }
 
-    .nav-padding a {
+    .nav-padding a, .nav-padding #Products {
         /* margin-left: 5px; */
         padding: 20px 10px;
     }
 
-    .nav-padding a:hover{
+    .nav-padding a:hover, .nav-padding #Products:hover{
         background-color: var(--color-bg-charcoal);
     }
 
@@ -170,8 +182,41 @@
 
     }
 
+    .dropdown-Parent {
+        position: relative;
+        display: block;
+    }
+
+    .dropdown-child {
+        display: none;
+        position: absolute;
+        /* padding: 20px 20px; */
+        /* min-width: 45px; */
+        z-index: 1;
+        background-color: var(--color-bg-lightblue);
+    }
+
+    .dropdown-child p {
+        width: 70px;
+        padding: 10px 10px 10px 50px;
+    }
+        
+    .dropdown-child p:hover {
+        background-color: var(--color-bg-charcoal);
+        cursor: pointer;
+
+    }
+
+    .dropdown-Parent:hover .dropdown-child {
+        display: block;
+    }
+
+    #Dropdown-button {
+        display: none;
+    }
+
     #intro {
-        /* background-attachment: fixed; */
+      
     }
 
     .image-in-div-contain {
@@ -192,14 +237,162 @@
         /* width: 100%; */
     }
 
+    #intro {
+        background-image: url('الصور/ورد.png');
+        background-size:100%;
+        background-attachment: fixed;
+        
+        
+    }
+
+    #Services {
+        background-image: url('الصور/وردةةة.png');
+        background-size:100%;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
     .cards {
-        margin-bottom: 30px;    
+        margin-bottom: 30px;   
+        position: absolute;
+        top: -60px;
+    }
+
+    .row {
+        margin-bottom: 30px;
+    }
+
+    .input-row {
+        display: flex;
+        width: 100%;
+        
+        font-family: mada, changa;
+    }
+
+    .input-row input:first-child {
+        margin-left: 5px;
+    }
+
+    .input-row input, .input-row select {
+        width: 50%;
+    }
+
+    .input-row:nth-child(3) input{
+        width: 100%;
+    }
+    
+    .input-row:nth-child(3) {
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+        height: 10vh;
+        resize: none;
+        text-align: start;
+        font-family: mada, changa;
+    }
+
+
+    .input-row ::placeholder {
+        font-family: mada, changa;
+        text-align: start;
+    }
+
+    .input-row select, .input-row option{
+        font-family: mada, changa;
+    }
+
+    input {
+        height: 30px;
+    }
+    
+    #location iframe {
+        width: 70%;
+        height: 70%;
     }
 
     
+@media screen and (max-width:820px)
+{
+
+    #intro {
+        height: 50vh;
+    }
+
+    .cards {
+        position:static;
+        
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .row .card {
+
+        margin :30px 0;
+    }
+
+    #Services {
+        height: auto;
+    }
+}
 
 
+@media screen and (max-width:638px)
+{
+    #Nav-Tools {
+        display: none;
+    }
 
-    
+    #Nav-menu {
+        display: none;
+    }
 
-    
+    #Dropdown-button {
+        
+        margin-right: auto;
+        margin-left: 10px;
+        font-size: 25px;
+        display: block;
+    }
+
+}
+@media screen and (max-width:590px)
+{
+
+    #intro {
+        height: 30vh;
+        background-image: url('الصور/خلفية\ الواجهة.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+        background-attachment:unset;
+        
+    }
+
+    #intro div {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:400px)
+{
+
+    footer {
+        flex-direction: column;
+    }
+
+    #Call-us, #location {
+        width: 100%;
+    }
+
+    #location iframe {
+        margin-right: 5px;
+        width: 95%;
+        height: 95%;
+    }
+
+}
