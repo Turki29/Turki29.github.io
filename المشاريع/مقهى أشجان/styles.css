@@ -238,7 +238,7 @@
     }
 
     #intro {
-        background-image: url('الصور/ورد.png');
+        background-image: url('الصور/ورد.webp');
         background-size:100%;
         background-attachment: fixed;
         
@@ -246,7 +246,7 @@
     }
 
     #Services {
-        background-image: url('الصور/وردةةة.png');
+        background-image: url('الصور/وردةةة.webp');
         background-size:100%;
         padding-bottom: 100px;
         position: relative;
